@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function calculadora(){
+            document.getElementById("resultado").value = parseFloat(document.getElementById("numero1").value) +
+                                                         parseFloat(document.getElementById("numero2").value) +
+                                                         parseFloat(document.getElementById("numero3").value);
+            document.getElementById("resultado").style.color="red";
+            document.getElementById("resultado").style.backgroundColor="yellow";
+        }
+    </script>
+    
+    <title>Prática com JavaScript</title>
+</head>
+<body>
+    <form name="meu_form">
+<h1>Digite os números a serem somados</h1>
+
+<p>
+<label for="nome">Número 1:</label>
+<input type="text" id="numero1" placeholder="Número 1" name="numero1"/>
+</p>
+
+<p>
+<label for="nome">Número 2:</label>
+<input type="text" id="numero2" placeholder="Número 2" name="numero2"/>
+</p>
+
+<p>
+<label for="nome">Número 3:</label>
+<input type="text" id="numero3" placeholder="Número 3" name="numero3"/>
+</p>
+
+<p>
+<label for="nome">Resultado:</label>
+<input type="text" id="resultado" placeholder="Resultado" name="resultado"/>
+</p>
+
+<p>
+<input type="button" value="Calcular" onclick="calculadora()">
+</p>
+
+</form>
+
+</body>
+</html>
